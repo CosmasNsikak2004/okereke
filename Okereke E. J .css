@@ -1,0 +1,234 @@
+@import url('/fonts.css');
+:root{
+    --Nunito: 'Nunito', cursive;
+
+    --yellow: linear-gradient(61deg, #22ffcc 0%, #2BD2FF 52%, #46ff97 90%);
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+*{
+    font-family: var(--Nunito);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+.container{
+    padding: 8px 8%;
+}
+.btn:hover{
+    background: var(--yellow);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 5px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+header .navbar a{
+    font-size: 18px;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: var(--light-color);
+    text-decoration-line: none;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--yellow);
+}
+
+header .icons i{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover{
+    color: #fff;
+    background: var(--yellow);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+/* Home section */
+
+.home-section{
+    min-height: 100vh;
+    position: relative;
+}
+
+.home-section .slide{
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.home-section .slide.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.home-section .slide::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.home-section .row{
+    min-height: 100vh;
+}
+
+.home-section .home-content{
+    margin: 10rem 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.home-section .home-content h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: normal;
+    text-shadow: 2px 3px 4px #555555;
+}
+.home-section .home-content p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.home-section .home-content .flex{
+    padding-right: 50%;
+    font-size: 15px;
+}
+.btn1{
+    border: 2.5px solid black;
+    background: none;
+    color: var(--text-black-900);
+    display: block;
+    margin: 50px 0;
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: scale .2 ease;
+}
+
+.btn1:hover{
+    background: #080808;
+    padding: 7px 12px;
+    font-weight: 100;
+    color: #fff;
+    scale: 1.05;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn1:active{
+    scale: 0.95;
+}
+
+.btn1 i{
+    margin-left: 20px;
+}
+@media (max-width: 900px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 15px;
+        margin: 10px;
+        font-size: 18px;
+        background: #eee;
+    }
+    .home-section .home-content .flex{
+        padding-right: 0;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    #srt{
+        display: none;
+    }
+}
+
+
+
+
+
+

@@ -147,6 +147,7 @@ header .icons #menu-bars{
     text-shadow: 2px 3px 4px #555555;
 }
 .home-section .home-content p{
+    color: #ffffff;
     margin-top: 20px;
     font-size: 18px;
 }
@@ -155,9 +156,9 @@ header .icons #menu-bars{
     font-size: 15px;
 }
 .btn1{
-    border: 2.5px solid black;
+    border: 2.5px solid #ffffff;
     background: none;
-    color: var(--text-black-900);
+    color: #ffffff;
     display: block;
     margin: 50px 0;
     width: fit-content;

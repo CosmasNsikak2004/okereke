@@ -184,6 +184,7 @@ section{
     font-size: 13px;
     font-weight: 800;
     transition: scale .2 ease;
+    cursor: pointer;
 }
 
 .btn1:hover{
@@ -201,58 +202,51 @@ section{
 }
 
 .btn1 i{
-    margin-left: 20px;}
- /* ------------------services---------------- */
- #services{
-    padding: 30px 30px;
+    margin-left: 20px;
 }
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap:50px;
-    margin-top: 40px;
-    box-shadow: none;
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
 }
-.services-list div{
-    color:var(--text-gray);
-    padding: 30px;
-    font-size: 13px;
-    /* margin-bottom: 4rem; */
+.heading{
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
     text-align: center;
-}
-
-.services-list div h4{
-    background: linear-gradient(to right, #7c7b7b 12%, #080808 40%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 15px;
+    text-shadow: 2px 3px 4px #555555;
     font-family: 'Playfair', sans-serif;
 }
-
-.services-list div a{
-    text-decoration: none;
+.about-img{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: .2rem solid #1d1d1d;
+}
+.about-content{
+    text-align: center;
+}
+.about-content p{
+    font-size: 1.7rem;
+    margin: 2rem 0 ;
+}
+.abt{
+    color: #080808;
+    border: 2.5px solid #080808;
+    margin: 10px 0;
     font-size: 15px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div p{
-    font-size: 18px;
-    color: #000;
-}
-/* 
-.services-list div:hover{
-    transform: translateY(-20px);
     cursor: pointer;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3 );
-} */
-
-.services-list div a:hover{
-    color: #e6cf00;
 }
-
-/* -----------portfolio---------- */
 @media (max-width: 991px){
     html{
         font-size: 55%;

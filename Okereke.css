@@ -77,7 +77,9 @@ html{
     background: var(--yellow);
     letter-spacing: .1rem;
 }
-
+.container{
+    margin: 0 5vw;
+}
 section{
     padding: 2rem 9%;
 }
@@ -189,11 +191,8 @@ section{
 
 .btn1:hover{
     background: #ffffff;
-    padding: 7px 12px;
-    font-weight: 100;
     color: #080808;
     scale: 1.05;
-    font-weight: 800;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -247,6 +246,54 @@ section{
     font-size: 15px;
     cursor: pointer;
 }
+#services{
+    padding: 30px 20px;
+    background: var(--bg-black-900);
+}
+
+.services-list{
+    background: var(--bg-black-900);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:50px;
+    margin-top: 40px;
+    box-shadow: none;
+}
+.services-list div{
+    background:white;
+    color:var(--text-gray);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 4rem 0;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.services-list div h4{
+    background: linear-gradient(to right, #7c7b7b 12%, #080808 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 30px 0 15px; 
+    font-family: 'Playfair', sans-serif;
+    text-align: center;
+}
+.services-list div p{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.services-list div:hover{
+    cursor: pointer;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3 );
+}
+.ex{
+    border: 2px solid #080808;
+    color: #080808;
+    margin: 30px auto;
+    border-radius: 5px;
+    font-size: 15px;
+}
 @media (max-width: 991px){
     html{
         font-size: 55%;
@@ -286,7 +333,11 @@ section{
         background: #eee;
     }
 }
-
+@media (max-width: 425px){
+    #srt{
+        display: none;
+    }
+}
 @media (max-width: 991px){
     html{
         font-size: 50%;

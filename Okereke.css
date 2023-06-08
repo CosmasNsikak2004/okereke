@@ -7,6 +7,8 @@
     --black: #192a56;
     --light-color: #666;
     --box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    --bg-black: #080808;
+    --bg-white: #ffffff;
 }
 
 *{
@@ -143,9 +145,9 @@ section{
     font-size: 16px;
 }
 .btn1{
-    border: 2.5px solid #ffffff;
+    border: 2.5px solid var(--bg-white);
     background: none;
-    color: #ffffff;
+    color: var(--bg-white);
     display: block;
     margin: 50px 0;
     width: fit-content;
@@ -160,8 +162,8 @@ section{
 }
 
 .btn1:hover{
-    background: #ffffff;
-    color: #080808;
+    background: var(--bg-white);
+    color: var(--bg-black);
     scale: 1.05;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -199,6 +201,7 @@ section{
 }
 .about-img img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 .about-content{
@@ -209,8 +212,8 @@ section{
     margin: 2rem 0 ;
 }
 .abt{
-    color: #080808;
-    border: 2.5px solid #080808;
+    color: var(--bg-black);
+    border: 2.5px solid var(--bg-black);
     margin: 10px 0;
     font-size: 15px;
     cursor: pointer;
@@ -229,7 +232,7 @@ section{
     box-shadow: none;
 }
 .services-list div{
-    background:white;
+    background:var(--bg-white);
     color:var(--text-gray);
     padding: 30px;
     border-radius: 5px;
@@ -250,15 +253,15 @@ section{
 .services-list div p{
     text-align: center;
     font-size: 16px;
-    color: #000;
+    color: var(--bg-black);
 }
 .services-list div:hover{
     cursor: pointer;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3 );
 }
 .ex{
-    border: 2px solid #080808;
-    color: #080808;
+    border: 2px solid var(--bg-black);
+    color: var(--bg-black);
     margin: 30px auto;
     border-radius: 5px;
     font-size: 15px;

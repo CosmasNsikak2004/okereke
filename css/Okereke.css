@@ -47,14 +47,6 @@ html{
 .container{
     margin: 0 5vw;
 }
-/* section{
-    padding: 2rem 9%;
-} */
-
-section:nth-child(even){
-    background: #eee;
-}
-
 header{
     position: fixed;
     top: 0;
@@ -309,6 +301,77 @@ section{
 .card-container p{
     font-size: 20px;
     color: rgb(80, 80, 80);
+}
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding: 5rem;
+}
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.education-row .education-column{
+    flex: 1 1 40rem;  
+}
+.education-column .title{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+}
+.education-column .education-box{
+    border-left: .2rem solid var(--bg-black);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--bg-black);
+    border-radius: 50%;   
+}
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--bg-black);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.education-content .content::before{
+    content: '';
+    position: absolute;
+    top:0;
+    width: 0;
+    height: 100%;
+}
+.education-content .content:hover:before{
+    width: 100%;
+}
+.education-content .content .year{
+    font-size: 1.5rem;
+    color: var(--bg-black);
+    padding-bottom: .5rem;
+}
+.education-content .content .year i{
+    padding-right: .5rem;
+}
+.education-content .content h3{
+    font-size: 2rem;
+}
+.education-content .content p{
+    font-size: 1.6rem;
+    padding-top: .5rem;
 }
 @media (max-width: 991px){
     html{

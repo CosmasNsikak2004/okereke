@@ -3,7 +3,7 @@
 :root{
     --Nunito: 'Nunito', cursive;
 
-    --yellow: linear-gradient(21deg, #000046 0%, #0404a4 50%, #0505fd 100%);
+    --yellow: linear-gradient(43deg, #00acdf 0%, #55d0ff 46%, #7ce8ff 100%);
     --black: #192a56;
     --light-color: #666;
     --box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -207,7 +207,7 @@ section{
     text-align: center;
 }
 .about-content p{
-    font-size: 1.7rem;
+    font-size: 16px;
     margin: 2rem 0 ;
 }
 .abt{

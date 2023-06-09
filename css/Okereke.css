@@ -19,7 +19,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -292,6 +291,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap:50px;
+    margin-bottom: 50px;
     /* margin:40px 50px; */
 }        
 .card {

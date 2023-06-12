@@ -464,9 +464,12 @@ section{
 .layer a i{
     font-size: 50px;
 }
+.ref{
+    text-align: center;
+}
 .ref-content{
     position: relative;
-    padding: 5rem 10rem;
+    padding: 5rem 5rem;
 }
 .content-ref{
     position: relative;
@@ -475,6 +478,12 @@ section{
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
+}
+.content-ref p{
+    font-size: 16px;
+}
+.p-box{
+    margin: 20px 0;
 }
 @media (max-width: 991px){
     html{

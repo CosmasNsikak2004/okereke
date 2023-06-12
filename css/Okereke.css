@@ -361,9 +361,6 @@ section{
     width: 0;
     height: 100%;
 }
-.education-content .content:hover:before{
-    width: 100%;
-}
 .education-content .content .year{
     font-size: 1.5rem;
     color: var(--bg-black);
@@ -466,6 +463,18 @@ section{
 }
 .layer a i{
     font-size: 50px;
+}
+.ref-content{
+    position: relative;
+    padding: 5rem 10rem;
+}
+.content-ref{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--bg-black);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
 }
 @media (max-width: 991px){
     html{

@@ -466,10 +466,10 @@ section{
 }
 .ref{
     text-align: center;
+    padding: 0 0 40px;
 }
 .ref-content{
     position: relative;
-    padding: 5rem 5rem;
 }
 .content-ref{
     position: relative;
@@ -484,6 +484,105 @@ section{
 }
 .p-box{
     margin: 20px 0;
+}
+/* footer starts */
+footer.footer{
+    position: relative;
+    padding: 40px;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+footer.footer .container h2{
+    font-family: 'Playfair', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+footer.footer .container .a p{
+    font-size: 15px;
+    color: #fff;
+    margin: 5px 0;
+}
+footer.footer .container .quicklinks p{
+    padding: 2px;
+    font-size: 16px;
+}
+footer.footer .container .quicklinks p a{
+    color: #fff;
+}
+footer.footer .container .contact p{
+    padding: 5px;
+    font-size: 16px;
+}
+footer.footer .container .contact p a{
+    color: #fff;
+}
+footer.footer .container .contact p a i{
+    margin-right: 5px;
+}
+footer.footer .container .news p{
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+}
+.news-btn{
+    border-radius: 10px;
+    background: linear-gradient(43deg, #00acdf 0%, #55d0ff 46%, #7ce8ff 100%);
+    color: #fff;
+}
+footer.footer .container .logo-footer{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Playfair', sans-serif;
+    padding-bottom: 15px;
+}
+
+footer.footer .follow div i{
+    color: white;
+    padding: 0.4rem;
+}
+
+footer.footer .follow div i:hover{
+    color: skyblue;
+    transform: scale(1.3);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+footer.footer .rights{
+    text-align: center;
+    justify-content: center;
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+footer.footer .move-up span{
+    color: #fff;
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+@media only screen and (max-width:1130px){
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:1130px){
+    footer.footer .container{
+    grid-template-columns: 100%;
+    text-align: center;
+    }
 }
 @media (max-width: 991px){
     html{

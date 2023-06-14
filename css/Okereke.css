@@ -490,14 +490,13 @@ section{
 {
     position: relative;
     width: 100%;
-    padding: 40px 70px;
+    padding: 50px 70px;
 }
 .contactUs .title
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 2em; */
 }
 .contactUs .title h2{
     color: #070809;
@@ -516,6 +515,7 @@ section{
     padding: 40px;
     background: var(--bg-white);
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 .box{
     position: relative;
@@ -567,16 +567,18 @@ section{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
 }
 .inputBox textarea{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid #3d3d3d;
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 .inputBox input[type="submit"]{
     background: #18b7ff;
@@ -649,9 +651,8 @@ section{
 }
 /* footer starts */
 footer.footer{
-    background: #003399;
+    background: #0e3959;
     position: relative;
-    margin-top: 50px;
     padding: 40px;
 }
 footer.footer .container{
@@ -698,7 +699,7 @@ footer.footer .container .news p{
 }
 .news-btn{
     border-radius: 10px;
-    background: linear-gradient(43deg, #00acdf 0%, #55d0ff 46%, #7ce8ff 100%);
+    background: #18b7ff;
     color: #fff;
 }
 footer.footer .container .logo-footer{

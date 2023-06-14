@@ -567,14 +567,14 @@ section{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #3d3d3d;
+    border: 1px solid #4c4c4d;
     border-radius: 5px;
 }
 .inputBox textarea{
     padding: 10px;
     font-size: 18px;
     outline: none;
-    border: 1px solid #3d3d3d;
+    border: 1px solid #4c4c4d;
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
@@ -592,6 +592,7 @@ section{
 }
 .inputBox ::placeholder{
     color: #999;
+    font-size: 16px;
 }
 /* info */
 .info{
@@ -735,7 +736,7 @@ footer.footer .move-up span{
 }
 
 footer.footer .move-up span:hover{
-    color: var(--white);
+    color: #18b7ff;
     cursor: pointer;
 }
 @media only screen and (max-width:1130px){
@@ -747,6 +748,9 @@ footer.footer .move-up span:hover{
     footer.footer .container{
     grid-template-columns: 100%;
     text-align: center;
+    }
+    .quicklinks{
+        text-align: left;
     }
 }
 @media (max-width: 991px){

@@ -109,7 +109,7 @@ header .icons #menu-bars{
 }
 /* -----------about------------ */
 #about{ 
-    padding: 120px 0 20px;
+    padding: 120px 20px 20px;
     color: #080808;
 } 
 .row{ 
@@ -135,12 +135,12 @@ header .icons #menu-bars{
     text-align: center;
 }
 .acp{
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     margin-bottom: 10px;
 }
 .sub-content p{
-    font-size: 18px;  
+    font-size: 16px;  
     margin: 20px 0;
 }
 /* static photo2 */

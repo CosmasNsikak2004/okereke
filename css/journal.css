@@ -306,9 +306,6 @@ footer.footer .move-up span:hover{
     grid-template-columns: 100%;
     text-align: center;
     }
-    .quicklinks{
-        text-align: left;
-    }
 }
 @media (max-width: 991px){
     html{

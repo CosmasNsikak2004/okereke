@@ -43,6 +43,5 @@ $(window).on("load",function(){
     });
     // AOS INSTANCE
     AOS.init()
-    
 });
   

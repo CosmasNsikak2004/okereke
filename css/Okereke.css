@@ -464,6 +464,13 @@ section{
 .layer a i{
     font-size: 50px;
 }
+.layer a i:hover{
+    scale: 1.1;
+}
+
+.layer a i:active{
+    scale: 0.95;
+}
 .ref{
     text-align: center;
     padding: 0 0 40px;
@@ -811,6 +818,9 @@ footer.footer .move-up span:hover{
         margin: 1rem;
         font-size: 2rem;
         background: #eee;
+    }
+    .award-title{
+        text-align: center;
     }
 }
 @media (max-width: 425px){
